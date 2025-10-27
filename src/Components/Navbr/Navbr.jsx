@@ -94,7 +94,7 @@ const Navbr = () => {
                     </Link>
                     <Link to='skills' className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
                     <Link to='education' className="hover:text-sky-400 transition cursor-pointer">Education</Link>
-                    <Link className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
+                    <Link to='contact' className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
                     <Link className="hover:text-sky-400 transition cursor-pointer">Project</Link>
                     <Link className="hover:text-sky-400 transition cursor-pointer">Contact</Link>
 

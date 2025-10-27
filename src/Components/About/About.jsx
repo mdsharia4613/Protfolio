@@ -10,7 +10,7 @@ const About = () => {
 
      
 
-        <section id="about-section" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <section id="about-section" className="py-28 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-32 items-center">
 
                 {/* Left: Image */}
@@ -41,7 +41,7 @@ const About = () => {
                     <p className="text-gray-400 text-lg">Passion • Objective • Progress</p>
 
                     <p className="text-gray-300 leading-relaxed">
-                        I'm <span className="font-semibold text-white">Saide Bin Sabid</span>,
+                        I'm <span className="font-semibold text-white">Sharia Haque</span>,
                         an enthusiastic and innovative web developer who loves solving problems
                         and creating clean, user-friendly interfaces. Developing technology to
                         make life simpler and more meaningful defines who I am.

@@ -1,7 +1,8 @@
 
 
 import { motion } from "framer-motion";
- 
+import Lottie from "lottie-react";
+import coding from "../../cosing.json" 
 
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
      
 
         <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-32 items-center">
 
                 {/* Left: Image */}
                 <motion.div
@@ -22,14 +23,11 @@ const About = () => {
                         rotate: 1,
                         boxShadow: "0px 10px 30px rgba(0,0,0,0.5)",
                     }}
-                    className="relative group cursor-pointer"
+                    className="relative group cursor-pointer "
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/30 to-pink-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                    <img
-                        src="https://i.ibb.co.com/3mkw6s9Y/IMG20230904143344-2.jpg"
-                        alt="Profile"
-                        className="relative rounded-3xl w-full h-auto object-cover border border-gray-700 shadow-xl transition-all duration-500"
-                    />
+                 
+                    <Lottie className="relative rounded-3xl  h-auto object-cover  shadow-xl transition-all duration-500" animationData={coding}></Lottie>
                 </motion.div>
 
                 {/* Right: Text */}

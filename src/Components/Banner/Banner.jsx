@@ -10,7 +10,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 rounded-2xl shadow-md">
+        <div className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 rounded-2xl shadow-md ">
             {/* Left Side Text */}
             <div className="text-center md:text-left space-y-4 md:w-1/2">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
@@ -36,7 +36,7 @@ const Banner = () => {
                     </span>
                 </h2>
 
-                <p className="text-gray-600 max-w-md">
+                <p className="text-gray-600 max-w-md ">
                     I love building clean, modern and responsive websites using React and
                     TailwindCSS.
                 </p>
@@ -54,7 +54,7 @@ const Banner = () => {
                 <img
                     src="https://i.ibb.co.com/3mkw6s9Y/IMG20230904143344-2.jpg"
                     alt="Profile"
-                    className="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-blue-500"
+                    className="w-64 md:w-72 max-w-full h-72 object-cover rounded-full shadow-lg border-4 border-blue-500"
                 />
             </div>
         </div>

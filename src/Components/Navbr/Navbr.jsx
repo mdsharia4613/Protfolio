@@ -16,7 +16,7 @@ const Navbr = () => {
 
     return (
         <div className="bg-[#0f172a]/90 backdrop-blur-md text-gray-200 fixed w-full top-0 z-50 shadow-md">
-            <div className="container mx-auto px-10">
+            <div className="container mx-auto ">
                 <div className="flex justify-between items-center py-4">
 
                     {/* Logo */}

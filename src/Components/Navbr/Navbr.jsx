@@ -31,7 +31,7 @@ const Navbr = () => {
                             About
                         </Link>
                         <Link to='skills' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer">Education</Link>
+                        <Link to='education' className="hover:text-sky-400 transition cursor-pointer">Education</Link>
                         <Link className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
                         <Link className="hover:text-sky-400 transition cursor-pointer">Project</Link>
                         <Link className="hover:text-sky-400 transition cursor-pointer">Contact</Link>
@@ -92,8 +92,8 @@ const Navbr = () => {
                     >
                         About
                     </Link>
-                    <Link className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
-                    <Link className="hover:text-sky-400 transition cursor-pointer">Education</Link>
+                    <Link to='skills' className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
+                    <Link to='education' className="hover:text-sky-400 transition cursor-pointer">Education</Link>
                     <Link className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
                     <Link className="hover:text-sky-400 transition cursor-pointer">Project</Link>
                     <Link className="hover:text-sky-400 transition cursor-pointer">Contact</Link>

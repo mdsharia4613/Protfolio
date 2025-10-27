@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Personal Portfolio",
+        "img": "/projects/portfolio.png",
+        "tech": [
+            "React",
+            "Tailwind CSS",
+            "Framer Motion"
+        ],
+        "description": "A modern and fully responsive portfolio website to showcase skills, education, and projects with smooth animations.",
+        "live": "https://your-portfolio.vercel.app"
+    },
+    {
+        "id": 2,
+        "title": "Todo Manager",
+        "img": "/projects/todo-app.png",
+        "tech": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "description": "A clean and simple todo application where users can add, edit, and delete daily tasks with local storage support.",
+        "live": "https://todo-manager.vercel.app"
+    },
+    {
+        "id": 3,
+        "title": "Weather Forecast App",
+        "img": "/projects/weather.png",
+        "tech": [
+            "React",
+            "OpenWeather API",
+            "Axios"
+        ],
+        "description": "A weather app that provides real-time weather data and 5-day forecasts for any city using the OpenWeather API.",
+        "live": "https://weather-forecast-react.vercel.app"
+    },
+    {
+        "id": 4,
+        "title": "E-commerce UI",
+        "img": "/projects/ecommerce.png",
+        "tech": [
+            "React",
+            "Tailwind CSS",
+            "React Router"
+        ],
+        "description": "A frontend e-commerce UI design featuring product listing, cart preview, and category-based filtering.",
+        "live": "https://react-ecommerce-ui.vercel.app"
+    },
+    {
+        "id": 5,
+        "title": "Blog Website",
+        "img": "/projects/blog.png",
+        "tech": [
+            "React",
+            "Markdown",
+            "Firebase"
+        ],
+        "description": "A simple blog platform where users can read, write, and manage posts with markdown support and Firebase authentication.",
+        "live": "https://react-blog-platform.vercel.app"
+    }
+]

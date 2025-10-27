@@ -10,7 +10,7 @@ const About = () => {
 
      
 
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <section id="about-section" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-32 items-center">
 
                 {/* Left: Image */}

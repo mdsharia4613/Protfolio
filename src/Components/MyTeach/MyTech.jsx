@@ -5,7 +5,7 @@ AOS.init();
 
 const MyTech = () => {
     return (
-        <div className='container mx-auto'>
+        <div id='skills' className='container mx-auto'>
             <div className='text-center'>
                 <p>|| Skill I have</p>
                 <h2 className='text-3xl font-bold inline-block border-b-4 border-rose-600 pb-1'> My Tech Stack</h2>

@@ -13,7 +13,7 @@ const Banner = () => {
     return (
         <section
             id="banner"
-            className="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-20 px-6 md:px-16 rounded-3xl shadow-lg container mx-auto mt-12"
+            className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
         >
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
                 {/* ==== LEFT SIDE ==== */}
@@ -24,14 +24,14 @@ const Banner = () => {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <p className="text-blue-500 font-semibold text-lg">👋 Hello There!</p>
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-                        I'm <span className="text-blue-600">Sharia</span>
+                    <p className=" font-semibold text-lg">👋 <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Hello there</span>!</p>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        I'm <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Sharia</span>
                     </h1>
 
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-white">
                         A passionate{" "}
-                        <span className="text-blue-500">
+                        <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">
                             <Typewriter
                                 words={[
                                     "Frontend Developer",
@@ -48,7 +48,7 @@ const Banner = () => {
                         </span>
                     </h2>
 
-                    <p className="text-gray-600 max-w-md mx-auto md:mx-0">
+                    <p className="bg-gradient-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent max-w-md mx-auto md:mx-0">
                         I love crafting interactive, responsive and visually appealing
                         websites with React & TailwindCSS. Let's make the web more
                         beautiful!

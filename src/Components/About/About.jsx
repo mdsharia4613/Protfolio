@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import coding from "../../cosing.json" 
-
+import './About.css'
 
 const About = () => {
     return (

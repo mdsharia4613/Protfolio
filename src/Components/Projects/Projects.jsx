@@ -1,34 +1,38 @@
 import './Project.css';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
-// import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { useEffect, useState } from 'react';
-
-
+import { SquareArrowOutUpRight } from 'lucide-react';
 
 const Projects = () => {
+    const [projects, setProjects] = useState([]);
 
-     const [projects , setProjects] = useState([]);
-
-     useEffect(() => {
+    useEffect(() => {
         fetch('/projectData.json')
-        .then(res => res.json())
-        .then(data => setProjects(data))
-     } ,[])
-   
+            .then((res) => res.json())
+            .then((data) => setProjects(data));
+    }, []);
+
     return (
-        <div>
+        <div className="py-20 bg-black text-white">
+            <h2 className="text-center text-4xl font-bold mb-12 text-rose-500 drop-shadow-[0_0_15px_rgba(255,0,0,0.7)]">
+                || My Projects ||
+            </h2>
+
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={'auto'}
+                slidesPerView={1}
+                breakpoints={{
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                }}
+                spaceBetween={0}
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -36,34 +40,62 @@ const Projects = () => {
                     modifier: 1,
                     slideShadows: true,
                 }}
-                pagination={true}
+                pagination={{ clickable: true }}
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                {
-                    projects.map(project => (
-                        <SwiperSlide key={project.id}>
-                            <div className="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center space-y-4 hover:scale-105 transition-transform duration-300">
-                                <img src={project.img} alt={project.title} className="rounded-xl object-cover h-64 w-50" />
+                {projects.map((project) => (
+                    <SwiperSlide key={project.id}>
+                        <div className="relative bg-gray-900 rounded-2xl border border-rose-500/40 shadow-[0_0_25px_rgba(255,0,0,0.4)] hover:shadow-[0_0_40px_rgba(255,0,0,0.8)] transition-all duration-500 overflow-hidden w-[320px] h-[420px] mx-auto hover:scale-105 group">
+                            <img
+                                src={project.img}
+                                alt=""
+                                className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                            />
 
-                                <div className="flex flex-wrap gap-2 justify-center">
+                            {/* Red glow border line (top) */}
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-500 via-red-600 to-rose-500 animate-pulse" />
+
+                            <div className="p-5 space-y-3">
+                                <h2 className="text-xl font-semibold text-rose-400 drop-shadow-[0_0_10px_rgba(255,0,0,0.6)]">
+                                    {project.title}
+                                </h2>
+
+                                <div className="flex flex-wrap gap-2">
                                     {project.tech.map((t, i) => (
-                                        <span className="bg-rose-400 text-white px-3 py-1 rounded-full text-sm" key={i}>{t}</span>
+                                        <span
+                                            key={i}
+                                            className="bg-rose-600/20 border border-rose-500/50 text-rose-300 text-xs px-3 py-1 rounded-full shadow-[0_0_10px_rgba(255,0,0,0.4)]"
+                                        >
+                                            {t}
+                                        </span>
                                     ))}
                                 </div>
 
-                                <div className="flex gap-4 mt-2">
-                                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-rose-500 text-white px-4 py-2 rounded-lg hover:bg-rose-600 transition-colors">Live Demo</a>
-                                    <button className="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors">Details</button>
+                                <div className="flex items-center justify-between mt-5 text-sm">
+                                    <a
+                                        href={project.live}
+                                        className="flex items-center gap-1 text-rose-400 hover:text-rose-300 hover:underline transition-colors"
+                                    >
+                                        <SquareArrowOutUpRight size={14} />
+                                        <span>View Project</span>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        className="text-rose-500 hover:text-rose-300 hover:underline transition-colors"
+                                    >
+                                        Details
+                                    </a>
                                 </div>
                             </div>
-                        </SwiperSlide>
 
-                    ))
-                }
+                            {/* Neon glow bottom edge */}
+                            <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-rose-500 via-red-600 to-rose-500 blur-sm" />
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
-
     );
 };
 

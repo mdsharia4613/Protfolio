@@ -2,7 +2,7 @@ import { Facebook, Github, Linkedin } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { useState } from 'react';
-
+import './Navber.css'
 const Navbr = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -20,21 +20,21 @@ const Navbr = () => {
 
                     {/* Desktop Menu */}
                     <ul className="hidden lg:flex gap-8 text-sm font-medium">
-                        <Link to="/" className="hover:text-sky-400 transition">Home</Link>
+                        <Link to="/" className="hover:text-sky-400 transition underline-effect">Home</Link>
                         <Link
                             to="about-section"
                             smooth={true}
                             duration={700}
                             offset={-70}
-                            className="cursor-pointer hover:text-sky-400 transition"
+                            className="cursor-pointer hover:text-sky-400 transition underline-effect"
                         >
                             About
                         </Link>
-                        <Link to='skills' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
-                        <Link to='education' className="hover:text-sky-400 transition cursor-pointer">Education</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer">Project</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer">Contact</Link>
+                        <Link to='skills' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect">Skills</Link>
+                        <Link to='education' className="hover:text-sky-400 transition cursor-pointer underline-effect">Education</Link>
+                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Experience</Link>
+                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Project</Link>
+                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Contact</Link>
                     </ul>
 
                     {/* Social Icons */}

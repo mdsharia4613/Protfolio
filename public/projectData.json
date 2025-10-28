@@ -56,17 +56,6 @@
         ],
         "description": "A simple blog platform where users can read, write, and manage posts with markdown support and Firebase authentication.",
         "live": "https://velvety-semifreddo-d3422b.netlify.app/"
-    },
-    {
-        "id": 5,
-        "title": "Blog Website",
-        "img": "https://i.ibb.co.com/nqf1FHwn/Screenshot-2025-10-28-034808.png",
-        "tech": [
-            "React",
-            "Markdown",
-            "Firebase"
-        ],
-        "description": "A simple blog platform where users can read, write, and manage posts with markdown support and Firebase authentication.",
-        "live": "https://frabjous-cactus-b35037.netlify.app/"
     }
+   
 ]

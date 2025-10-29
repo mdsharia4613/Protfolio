@@ -21,7 +21,7 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className="relative overflow-hidden bg-linear-to-b from-gray-900 to-gray-800    "
+            className="relative overflow-hidden     "
         >
             <div className="container mx-auto py-36 px-6 md:px-38">
                 <Particles

@@ -11,7 +11,7 @@ const About = () => {
 
 
 
-        <section id="about-section" className="py-28 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <section id="about-section" className="py-28 text-white">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-32 items-center">
 
                 {/* Left: Image */}
@@ -26,7 +26,7 @@ const About = () => {
                     }}
                     className="relative group cursor-pointer "
                 >
-                    <div className="absolute inset-0   bg-linear-to-l from-sky-500/30 to-cyan-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                    <div className="absolute inset-0    rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
 
                     <Lottie className="relative rounded-3xl  h-auto object-cover  shadow-xl transition-all duration-500" animationData={coding}></Lottie>
                 </motion.div>

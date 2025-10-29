@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
     return (
-        <section id="education" className=" py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative">
+        <section id="education" className=" py-20 text-white relative">
             <div className="text-center mb-16">
                 <p className="text-sky-400 tracking-widest">|| Education</p>
                 <h2 className="text-3xl md:text-4xl font-bold inline-block border-b-4 border-rose-500 pb-2 bg-linear-to-r from-rose-500 to-sky-400 bg-clip-text text-transparent">

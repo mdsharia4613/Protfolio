@@ -1,11 +1,12 @@
 
-import Footer from '../Footer/footer';
+
+import Footer from '../Footer/Footer';
 import Navbr from '../Navbr/Navbr';
 import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
-        <div>
+        <div className='bg-linear-to-b from-[#0a192f] to-[#020617] min-h-screen'>
             <Navbr></Navbr>
             <Outlet></Outlet>
             <Footer></Footer>

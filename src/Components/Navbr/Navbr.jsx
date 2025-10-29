@@ -49,8 +49,8 @@ const Navbr = () => {
 
                     {/* Social Icons */}
                     <div className="hidden lg:flex gap-5 text-gray-300">
-                        <a href="#"><Facebook className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
-                        <a href="#"><Github className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="https://www.facebook.com/md.sharia.368567/"><Facebook className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="https://github.com/mdsharia4613"><Github className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                         <a href="#"><Linkedin className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                     </div>
 
@@ -109,8 +109,8 @@ const Navbr = () => {
                     <Link className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Contact</Link>
 
                     <div className="flex gap-4 mt-3">
-                        <a href="#"><Facebook className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
-                        <a href="#"><Github className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="https://www.facebook.com/md.sharia.368567/"><Facebook className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="https://github.com/mdsharia4613"><Github className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                         <a href="#"><Linkedin className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import { CiFacebook } from "react-icons/ci";
 
 const Contact = () => {
     return (
-        <section id="contact" className="relative py-20 bg-gradient-to-b from-[#0a192f] to-[#020617] text-white overflow-hidden">
+        <section id="contact" className="relative py-20  text-white overflow-hidden">
 
             {/* Section Header */}
             <div className="text-center mb-12 relative z-10">

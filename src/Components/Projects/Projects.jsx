@@ -19,9 +19,9 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id='project' className="py-20 bg-linear-to-b from-[#0a192f] to-[#020617] ">
+        <div id='project' className="py-20 ">
            <div className='container mx-auto'>
-                <h2 className="text-center text-4xl font-bold mb-12 bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">
+                <h2 className="text-center text-4xl font-bold mb-12 bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent  drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">
                     || My Projects ||
                 </h2>
 
@@ -96,27 +96,32 @@ const Projects = () => {
                                         </button>
 
                                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                                            <div className="modal-box">
+                                            <div className="modal-box bg-linear-to-br from-[#020617] via-[#0f172a] to-[#0a192f] border-2 border-cyan-400/60 rounded-2xl shadow-[0_0_35px_rgba(56,189,248,0.45)] text-white backdrop-blur-xl">
                                                 {selectDes && (
                                                     <>
-                                                        <h3 className="font-bold text-lg text-cyan-400">
+                                                        <h3 className="font-extrabold text-2xl bg-linear-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]">
                                                             {selectDes.title}
                                                         </h3>
-                                                        <p className="mt-2 text-gray-300">{selectDes.description}</p>
+                                                        <p className="mt-4 text-gray-300 text-base leading-relaxed">
+                                                            {selectDes.description}
+                                                        </p>
                                                     </>
                                                 )}
                                                 <div className="modal-action">
                                                     <form method="dialog">
-                                                        <button className="btn">Close</button>
+                                                        <button className="px-6 py-2.5 rounded-full font-semibold border border-cyan-400/80 text-transparent bg-clip-text bg-linear-to-r from-sky-400 to-cyan-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(56,189,248,0.7)] transition-all duration-300">
+                                                            Close ✨
+                                                        </button>
                                                     </form>
                                                 </div>
                                             </div>
                                         </dialog>
+
                                     </div>
                                 </div>
 
                                 {/* Neon glow bottom edge */}
-                                <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-sky-500  to-cyan-400 blur-sm" />
+                                <div className="absolute bottom-0 left-0 w-full h-2 bg-linear-to-r from-sky-500  to-cyan-400 blur-sm" />
                             </div>
                         </SwiperSlide>
                     ))}

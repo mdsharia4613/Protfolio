@@ -81,10 +81,10 @@ const Footer = () => {
                     </h6>
 
                     <div className="flex items-center justify-center gap-5">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/md.sharia.368567/" target="_blank" rel="noopener noreferrer">
                             <Facebook className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)] cursor-pointer" />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/mdsharia4613" target="_blank" rel="noopener noreferrer">
                             <Github className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)] cursor-pointer" />
                         </a>
                         <a href="#" target="_blank" rel="noopener noreferrer">

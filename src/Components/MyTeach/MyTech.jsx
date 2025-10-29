@@ -12,7 +12,7 @@ const MyTech = () => {
 
         <section
             id="skills"
-            className=" py-20 bg-linear-to-b from-gray-900 to-gray-800 text-white relative"
+            className=" py-20  text-white relative"
         >
             {/* Section Header */}
             <div className="text-center mb-16">

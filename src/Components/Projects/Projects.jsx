@@ -103,7 +103,12 @@ const Projects = () => {
                                                             {selectDes.title}
                                                         </h3>
                                                         <p className="mt-4 text-gray-300 text-base leading-relaxed">
-                                                            {selectDes.description}
+                                                            <h2 className='text-sky-400 text-xl font-semibold'>Description</h2> 
+                                                            <span className='text-sm'>{selectDes.description}</span>
+                                                        </p>
+                                                        <p className="mt-4 text-gray-300 text-base leading-relaxed">
+                                                            <h2 className='text-sky-400 text-xl font-semibold'>ChallengingPart:</h2> 
+                                                            <span className='text-sm'>{selectDes.challengingPart}</span>
                                                         </p>
                                                     </>
                                                 )}

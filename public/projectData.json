@@ -8,7 +8,8 @@
             "Tailwind CSS",
             "Framer Motion"
         ],
-        "description": "A modern and fully responsive portfolio website to showcase skills, education, and projects with smooth animations.",
+        "description": "RedParts is a modern and fully responsive portfolio website designed to showcase personal skills, projects, and educational background with smooth animations and clean UI components.",
+        "challengingPart": "The most challenging part was implementing smooth scroll animations and transitions using Framer Motion while maintaining performance and responsiveness across all devices.",
         "live": "https://lighthearted-biscotti-e8c959.netlify.app/"
     },
     {
@@ -19,7 +20,8 @@
             "HTML",
             "Tailwind CSS"
         ],
-        "description": "A clean and simple todo application where users can add, edit, and delete daily tasks with local storage support.",
+        "description": "EcoBazar is a clean and minimal e-commerce landing page showcasing featured products, deals, and categories with an eye-catching layout built using Tailwind CSS.",
+        "challengingPart": "The main challenge was creating a flexible and fully responsive grid layout that looks balanced across different screen sizes.",
         "live": "https://inspiring-semifreddo-495529.netlify.app/"
     },
     {
@@ -31,7 +33,8 @@
             "Tailwind CSS",
             "JS"
         ],
-        "description": "A weather app that provides real-time weather data and 5-day forecasts for any city using the OpenWeather API.",
+        "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
+        "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
         "live": "https://graceful-cendol-8d9335.netlify.app/"
     },
     {
@@ -42,7 +45,8 @@
             "HTML",
             "CSS"
         ],
-        "description": "A frontend e-commerce UI design featuring product listing, cart preview, and category-based filtering.",
+        "description": "Medifit is a modern health and fitness website design featuring sections for training programs, expert doctors, and health consultation. It focuses on visual balance and user-friendly layouts.",
+        "challengingPart": "Creating elegant hover animations and perfect section alignment purely with CSS (without JavaScript) was the most challenging part.",
         "live": "https://darling-toffee-be8a16.netlify.app/"
     },
     {
@@ -54,8 +58,8 @@
             "Tailwind CSS",
             "JS"
         ],
-        "description": "A simple blog platform where users can read, write, and manage posts with markdown support and Firebase authentication.",
+        "description": "BookShelf is an interactive blogging platform where users can write, read, and delete posts. It includes markdown support and stores data using local storage.",
+        "challengingPart": "The most challenging part was integrating the markdown parser and managing post data efficiently in local storage.",
         "live": "https://velvety-semifreddo-d3422b.netlify.app/"
     }
-   
 ]

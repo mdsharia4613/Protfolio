@@ -1,8 +1,8 @@
 import { Facebook, Github, Linkedin } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { useState } from 'react';
 import './Navber.css'
+import { motion } from "framer-motion";
 const Navbr = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,25 +11,32 @@ const Navbr = () => {
             <div className="container mx-auto">
                 <div className="flex justify-between items-center py-4 px-4 md:px-8">
                     {/* Logo */}
-                    <Link
-                        to="home"
-                        smooth={true}
-                        duration={700}
-                        offset={-70}
-                        className="text-3xl font-bold bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.6)] cursor-pointer"
+                    <motion.div
+                        whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgb(56,189,248)" }}
+                        transition={{ type: "spring", stiffness: 300 }}
                     >
-                        Sharia
-                    </Link>
-
+                        <Link
+                            to="home"
+                            smooth={true}
+                            duration={700}
+                            offset={-70}
+                            className="text-3xl font-bold bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent cursor-pointer drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
+                        >
+                            Sharia
+                        </Link>
+                    </motion.div>
+                    
                     {/* Desktop Menu */}
                     <ul className="hidden lg:flex gap-8 text-sm font-medium">
-                        <Link to="home" className=" transition underline-effect  cursor-pointer hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Home</Link>
+                        <Link to="home" smooth={true}
+                            duration={700}
+                            offset={-70} className=" transition underline-effect  cursor-pointer hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Home</Link>
                         <Link
                             to="about-section"
                             smooth={true}
                             duration={700}
                             offset={-70}
-                            className="cursor-pointer  transition underline-effect bg-gradient-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
+                            className="cursor-pointer  transition underline-effect bg-linear-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
                         >
                             About
                         </Link>

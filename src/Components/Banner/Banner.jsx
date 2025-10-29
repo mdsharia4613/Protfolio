@@ -13,7 +13,7 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
+            className="bg-linear-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
         >
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
                 {/* ==== LEFT SIDE ==== */}
@@ -24,14 +24,14 @@ const Banner = () => {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <p className=" font-semibold text-lg">👋 <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Hello there</span>!</p>
+                    <p className=" font-semibold text-lg">👋 <span className="bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Hello there</span>!</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                        I'm <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Sharia</span>
+                        I'm <span className="bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Sharia</span>
                     </h1>
 
                     <h2 className="text-2xl md:text-3xl font-semibold text-white">
                         A passionate{" "}
-                        <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">
                             <Typewriter
                                 words={[
                                     "Frontend Developer",
@@ -48,7 +48,7 @@ const Banner = () => {
                         </span>
                     </h2>
 
-                    <p className="bg-gradient-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent max-w-md mx-auto md:mx-0">
+                    <p className="bg-linear-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent max-w-md mx-auto md:mx-0">
                         I love crafting interactive, responsive and visually appealing
                         websites with React & TailwindCSS. Let's make the web more
                         beautiful!
@@ -66,7 +66,10 @@ const Banner = () => {
 
                         <motion.a 
                             
-                            href="#"
+                            href="#contact"
+                            smooth={true}
+                            duration={700}
+                            offset={-70}
                             whileHover={{ scale: 1.08 }}
                             whileTap={{ scale: 0.95 }}
                             className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all"

@@ -1,14 +1,15 @@
 
 
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import Lottie from "lottie-react";
-import coding from "../../cosing.json" 
+import coding from "../../cosing.json"
 
 
 const About = () => {
     return (
 
-     
+
 
         <section id="about-section" className="py-28 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-32 items-center">
@@ -22,11 +23,11 @@ const About = () => {
                         scale: 1.05,
                         rotate: 1,
                         boxShadow: "0px 10px 30px rgba(0,0,0,0.5)",
-                    }}  
+                    }}
                     className="relative group cursor-pointer "
                 >
                     <div className="absolute inset-0   bg-linear-to-l from-sky-500/30 to-cyan-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                 
+
                     <Lottie className="relative rounded-3xl  h-auto object-cover  shadow-xl transition-all duration-500" animationData={coding}></Lottie>
                 </motion.div>
 
@@ -40,31 +41,36 @@ const About = () => {
                     <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
                     <p className="text-gray-400 text-lg">Passion • Objective • Progress</p>
 
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-300 leading-relaxed text-[16px]">
                         I'm <span className="font-semibold text-white">Sharia Haque</span>,
                         an enthusiastic and innovative web developer who loves solving problems
                         and creating clean, user-friendly interfaces. Developing technology to
                         make life simpler and more meaningful defines who I am.
                     </p>
 
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-300 leading-relaxed text-[16px]">
                         I enjoy a challenge. I love pushing boundaries and exploring new ideas.
                     </p>
 
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-300 leading-relaxed text-[16px]">
                         Whether it’s through creating projects, exploring new frameworks, or
                         connecting with developer communities — I’m deeply passionate about lifelong learning.
                         I also have a strong love for design and animation.
                     </p>
 
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        transition={{ type: "spring", stiffness: 200 }}
-                        className="mt-6 px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-medium shadow-lg"
-                    >
-                        Let’s Connect
-                    </motion.button>
+                    <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.95 }}>
+                        <Link
+                            to="contact"
+                            smooth={true}
+                            duration={700}
+                            offset={-70}
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-linear-to-r f-rom-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 hover:text-white px-10 py-3 rounded-full font-semibold shadow-md transition-all cursor-pointer"
+                        >
+                            Let's Me
+                        </Link>
+                    </motion.div>
                 </motion.div>
             </div>
         </section>

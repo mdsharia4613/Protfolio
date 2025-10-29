@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -20,9 +21,9 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className="relative overflow-hidden bg-linear-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16   "
+            className="relative overflow-hidden bg-linear-to-b from-gray-900 to-gray-800    "
         >
-            <div className="container mx-auto">
+            <div className="container mx-auto py-36 px-6 md:px-38">
                 <Particles
                     id="tsparticles"
                     init={particlesInit}
@@ -95,9 +96,9 @@ const Banner = () => {
                                     loop
                                     cursor
                                     cursorStyle="|"
-                                    typeSpeed={70}
-                                    deleteSpeed={50}
-                                    delaySpeed={1500}
+                                    typeSpeed={50}
+                                    deleteSpeed={80}
+                                    delaySpeed={2000}
                                 />
                             </span>
                         </h2>
@@ -113,23 +114,23 @@ const Banner = () => {
                                 onClick={() => handleDownload()}
                                 whileHover={{ scale: 1.08 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all"
+                                className="bg-linear-to-r f-rom-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all cursor-pointer"
                             >
                                 Download CV
                             </motion.button>
 
-                            <motion.a
+                            <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.95 }}>
+                                <Link
+                                    to="contact"
+                                    smooth={true}
+                                    duration={700}
+                                    offset={-70}
+                                    className="border-2 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:f-rom-blue-500 hover:to-cyan-500 hover:text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all cursor-pointer"
+                                >
+                                    Contact Me
+                                </Link>
+                            </motion.div>
 
-                                href="#contact"
-                                smooth={true}
-                                duration={700}
-                                offset={-70}
-                                whileHover={{ scale: 1.08 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all"
-                            >
-                                Contact Me
-                            </motion.a>
                         </div>
                     </motion.div>
 

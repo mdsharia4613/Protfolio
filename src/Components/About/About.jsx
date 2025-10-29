@@ -22,10 +22,10 @@ const About = () => {
                         scale: 1.05,
                         rotate: 1,
                         boxShadow: "0px 10px 30px rgba(0,0,0,0.5)",
-                    }}
+                    }}  
                     className="relative group cursor-pointer "
                 >
-                    <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/30 to-pink-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                    <div className="absolute inset-0   bg-linear-to-l from-sky-500/30 to-cyan-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                  
                     <Lottie className="relative rounded-3xl  h-auto object-cover  shadow-xl transition-all duration-500" animationData={coding}></Lottie>
                 </motion.div>

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 const Banner = () => {
     // CV download function
@@ -9,13 +11,66 @@ const Banner = () => {
         link.download = "My_CV.pdf";
         link.click();
     };
-
+   
+    // Firefly Particles init
+    const particlesInit = async (main) => {
+        await loadFull(main);
+    };
+    
     return (
         <section
             id="home"
-            className="bg-linear-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
+            className="relative overflow-hidden bg-linear-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
         >
-            <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+           
+            {/* ==== FIREFLY PARTICLES ==== */}
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                canvasClassName="absolute inset-0 z[-1]"
+                options={{
+                    fullScreen: { enable: false },
+                    background: { color: "transparent" },
+                    fpsLimit: 60,
+                    particles: {
+                        number: { value: 40 },
+                        color: { value: ["#38bdf8", "#3b82f6", "#67e8f9"] },
+                        shape: { type: "circle" },
+                        opacity: {
+                            value: 0.7,
+                            random: true,
+                            animation: {
+                                enable: true,
+                                speed: 0.4,
+                                minimumValue: 0.2,
+                            },
+                        },
+
+                        size: {
+                            value: { min: 1, max: 4 },
+                            random: true,
+                        },
+                        move: {
+                            enable: true,
+                            speed: 0.6,
+                            direction: "none",
+                            random: true,
+                            straight: false,
+                            outModes: { default: "bounce" },
+                        },
+                        shadow: {
+                            enable: true,
+                            color: "#38bdf8",
+                            blur: 5,
+                        },
+                    },
+                    detectRetina: true,
+                }}
+            />
+            {/* ==== Floating Gradient Glow ==== */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(56,189,248,0.15),_transparent_60%)] blur-3xl"></div>
+
+            <div className="relative overflow-visible flex flex-col-reverse md:flex-row items-center justify-between gap-10">
                 {/* ==== LEFT SIDE ==== */}
                 <motion.div
                     className="text-center md:text-left space-y-6 md:w-1/2"
@@ -56,7 +111,7 @@ const Banner = () => {
 
                     <div className="flex items-center justify-center md:justify-start gap-4">
                         <motion.button
-                            onClick={handleDownload}
+                            onClick={() => handleDownload()}
                             whileHover={{ scale: 1.08 }}
                             whileTap={{ scale: 0.95 }}
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all"
@@ -89,7 +144,7 @@ const Banner = () => {
                 >
                     <div className="relative">
                         <img
-                            src="https://i.ibb.co.com/3mkw6s9Y/IMG20230904143344-2.jpg"
+                            src="https://i.ibb.co.com/jkChYj8J/my-bg-remove.png"
                             alt="Profile"
                             className="w-64 md:w-80 h-64 md:h-80 object-cover rounded-full border-4 border-blue-500 shadow-2xl"
                         />

@@ -9,7 +9,6 @@ import {
 
 import Home from './Components/Home/Home';
 import Root from './Components/Root/Root';
-import About from './Components/About/About';
 
 
 const router = createBrowserRouter([

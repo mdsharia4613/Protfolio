@@ -12,7 +12,7 @@ const Banner = () => {
 
     return (
         <section
-            id="banner"
+            id="home"
             className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-6 md:px-16  container mx-auto "
         >
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">

@@ -11,47 +11,50 @@ const Navbr = () => {
             <div className="container mx-auto">
                 <div className="flex justify-between items-center py-4 px-4 md:px-8">
                     {/* Logo */}
-                    <NavLink
-                        to="/"
-                        className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent"
+                    <Link
+                        to="home"
+                        smooth={true}
+                        duration={700}
+                        offset={-70}
+                        className="text-3xl font-bold bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.6)] cursor-pointer"
                     >
                         Sharia
-                    </NavLink>
+                    </Link>
 
                     {/* Desktop Menu */}
                     <ul className="hidden lg:flex gap-8 text-sm font-medium">
-                        <Link to="/" className="hover:text-sky-400 transition underline-effect">Home</Link>
+                        <Link to="home" className=" transition underline-effect  cursor-pointer hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Home</Link>
                         <Link
                             to="about-section"
                             smooth={true}
                             duration={700}
                             offset={-70}
-                            className="cursor-pointer hover:text-sky-400 transition underline-effect"
+                            className="cursor-pointer  transition underline-effect bg-gradient-to-l from-sky-400 to-cyan-300 bg-clip-text text-transparent hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
                         >
                             About
                         </Link>
-                        <Link to='skills' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect">Skills</Link>
-                        <Link to='education' className="hover:text-sky-400 transition cursor-pointer underline-effect">Education</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Experience</Link>
-                        <Link to='project' className="hover:text-sky-400 transition cursor-pointer underline-effect">Project</Link>
-                        <Link to='contact' className="hover:text-sky-400 transition cursor-pointer underline-effect">Contact</Link>
+                        <Link to='skills' smooth={true} duration={700} offset={-70} className=" transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Skills</Link>
+                        <Link to='education' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Education</Link>
+                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Experience</Link>
+                        <Link to='project' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Project</Link>
+                        <Link to='contact' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Contact</Link>
                     </ul>
 
                     {/* Social Icons */}
                     <div className="hidden lg:flex gap-5 text-gray-300">
-                        <a href="#"><Facebook className="hover:text-sky-400 transition" /></a>
-                        <a href="#"><Github className="hover:text-sky-400 transition" /></a>
-                        <a href="#"><Linkedin className="hover:text-sky-400 transition" /></a>
+                        <a href="#"><Facebook className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="#"><Github className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="#"><Linkedin className="hover:text-sky-400 transition duration-700 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                     </div>
 
                     {/* Mobile Toggle */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="lg:hidden focus:outline-none text-gray-300 transition-transform duration-300"
+                        className="lg:hidden focus:outline-none text-cyan-300 transition-transform duration-300"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-6 h-6"
+                            className="w-6 h-6 cursor-pointer"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -76,9 +79,9 @@ const Navbr = () => {
                         }`}
                 >
                     <Link
-                        to="/"
+                        to="home"
                         onClick={() => setIsOpen(false)}
-                        className="hover:text-sky-400 transition cursor-pointer"
+                        className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
                     >
                         Home
                     </Link>
@@ -88,20 +91,20 @@ const Navbr = () => {
                         duration={700}
                         offset={-70}
                         onClick={() => setIsOpen(false)}
-                        className="cursor-pointer hover:text-sky-400 transition"
+                        className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]"
                     >
                         About
                     </Link>
-                    <Link to='skills' className="hover:text-sky-400 transition cursor-pointer">Skills</Link>
-                    <Link to='education' className="hover:text-sky-400 transition cursor-pointer">Education</Link>
-                    <Link to='contact' className="hover:text-sky-400 transition cursor-pointer">Experience</Link>
-                    <Link className="hover:text-sky-400 transition cursor-pointer">Project</Link>
-                    <Link className="hover:text-sky-400 transition cursor-pointer">Contact</Link>
+                    <Link to='skills' className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]r">Skills</Link>
+                    <Link to='education' className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Education</Link>
+                    <Link to='contact' className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Experience</Link>
+                    <Link className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Project</Link>
+                    <Link className="hover:text-sky-400 transition cursor-pointer underline-effect hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">Contact</Link>
 
                     <div className="flex gap-4 mt-3">
-                        <a href="#"><Facebook className="hover:text-sky-400 transition" /></a>
-                        <a href="#"><Github className="hover:text-sky-400 transition" /></a>
-                        <a href="#"><Linkedin className="hover:text-sky-400 transition" /></a>
+                        <a href="#"><Facebook className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="#"><Github className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
+                        <a href="#"><Linkedin className="hover:text-sky-400 transition hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]" /></a>
                     </div>
                 </div>
             </div>

@@ -7,8 +7,10 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import { SquareArrowOutUpRight } from 'lucide-react';
 
+
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const [selectDes, setSelectDes] = useState(null);
 
     useEffect(() => {
         fetch('/projectData.json')
@@ -17,9 +19,9 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id='project' className="py-20 bg-black text-white">
+        <div id='project' className="py-20 bg-linear-to-b from-[#0a192f] to-[#020617] ">
            <div className='container mx-auto'>
-                <h2 className="text-center text-4xl font-bold mb-12 text-rose-500 drop-shadow-[0_0_15px_rgba(255,0,0,0.7)]">
+                <h2 className="text-center text-4xl font-bold mb-12 bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">
                     || My Projects ||
                 </h2>
 
@@ -47,7 +49,7 @@ const Projects = () => {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative bg-gray-900 rounded-2xl border border-rose-500/40 shadow-[0_0_25px_rgba(255,0,0,0.4)] hover:shadow-[0_0_40px_rgba(255,0,0,0.8)] transition-all duration-500 overflow-hidden w-[320px] h-[420px] mx-auto hover:scale-105 group">
+                            <div className="relative bg-gray-900 rounded-2xl border border-cyan-400/40 shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] transition-all duration-500 overflow-hidden w-[320px] h-[420px] mx-auto hover:scale-105 group">
                                 <img
                                     src={project.img}
                                     alt=""
@@ -55,10 +57,10 @@ const Projects = () => {
                                 />
 
                                 {/* Red glow border line (top) */}
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-500 via-red-600 to-rose-500 animate-pulse" />
+                                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-cyan-500  to-sky-500 animate-pulse" />
 
                                 <div className="p-5 space-y-3">
-                                    <h2 className="text-xl font-semibold text-rose-400 drop-shadow-[0_0_10px_rgba(255,0,0,0.6)]">
+                                    <h2 className="text-xl font-semibold text-cyan-400 drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">
                                         {project.title}
                                     </h2>
 
@@ -66,7 +68,7 @@ const Projects = () => {
                                         {project.tech.map((t, i) => (
                                             <span
                                                 key={i}
-                                                className="bg-rose-600/20 border border-rose-500/50 text-rose-300 text-xs px-3 py-1 rounded-full shadow-[0_0_10px_rgba(255,0,0,0.4)]"
+                                                className="bg-cyan-600/20 border border-cyan-400/50 text-cyan-300 text-xs px-3 py-1 rounded-full shadow-[0_0_10px_rgba(56,189,248,0.4)]"
                                             >
                                                 {t}
                                             </span>
@@ -76,22 +78,45 @@ const Projects = () => {
                                     <div className="flex items-center justify-between mt-5 text-sm">
                                         <a
                                             href={project.live}
-                                            className="flex items-center gap-1 text-rose-400 hover:text-rose-300 hover:underline transition-colors"
+                                            className="flex items-center gap-1 text-sky-500 hover:text-cayn-300 hover:underline transition-colors duration-500"
                                         >
                                             <SquareArrowOutUpRight size={14} />
                                             <span>View Project</span>
                                         </a>
-                                        <a
-                                            href="#"
-                                            className="text-rose-500 hover:text-rose-300 hover:underline transition-colors"
+                                        
+                                        {/* Open the modal using document.getElementById('ID').showModal() method */}
+                                        <button
+                                            onClick={() => {
+                                                setSelectDes(project);
+                                                document.getElementById('my_modal_5').showModal();
+                                            }}
+                                            className="text-cyan-400 hover:text-cyan-200 hover:underline transition-colors duration-500 cursor-pointer"
                                         >
                                             Details
-                                        </a>
+                                        </button>
+
+                                        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                                            <div className="modal-box">
+                                                {selectDes && (
+                                                    <>
+                                                        <h3 className="font-bold text-lg text-cyan-400">
+                                                            {selectDes.title}
+                                                        </h3>
+                                                        <p className="mt-2 text-gray-300">{selectDes.description}</p>
+                                                    </>
+                                                )}
+                                                <div className="modal-action">
+                                                    <form method="dialog">
+                                                        <button className="btn">Close</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
                                     </div>
                                 </div>
 
                                 {/* Neon glow bottom edge */}
-                                <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-rose-500 via-red-600 to-rose-500 blur-sm" />
+                                <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-sky-500  to-cyan-400 blur-sm" />
                             </div>
                         </SwiperSlide>
                     ))}

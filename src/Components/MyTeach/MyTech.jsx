@@ -12,12 +12,12 @@ const MyTech = () => {
 
         <section
             id="skills"
-            className=" py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative"
+            className=" py-20 bg-linear-to-b from-gray-900 to-gray-800 text-white relative"
         >
             {/* Section Header */}
             <div className="text-center mb-16">
                 <p className="text-sky-400 tracking-widest">|| Skills I Have</p>
-                <h2 className="text-3xl md:text-4xl font-bold inline-block border-b-4 border-rose-500 pb-2">
+                <h2 className="text-3xl md:text-4xl font-bold inline-block border-b-4 border-rose-500 pb-2 bg-linear-to-r from-rose-500 to-sky-400 bg-clip-text text-transparent">
                     My Tech Stack
                 </h2>
             </div>
@@ -26,7 +26,7 @@ const MyTech = () => {
             <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 px-6">
 
                 {/* Vertical Divider */}
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-rose-500 via-gray-400 to-sky-500 animate-pulse"></div>
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-rose-500 via-gray-400 to-sky-500 animate-pulse"></div>
 
                 {/* Left Card: Languages */}
                 <div

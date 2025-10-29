@@ -46,7 +46,7 @@ const Contact = () => {
 
                         {/* Find Me Online */}
                         <div className="mt-4">
-                            <h2 className="text-lg font-semibold mb-3 bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">
+                            <h2 className="text-lg font-semibold mb-3  bg-linear-to-r from-rose-500 to-sky-400 bg-clip-text text-transparent">
                                 Find Me Online
                             </h2>
                             <div className="flex justify-center gap-8 text-2xl">

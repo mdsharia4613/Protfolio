@@ -38,7 +38,7 @@ const About = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="space-y-6"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]">About Me</h2>
                     <p className="text-gray-400 text-lg">Passion • Objective • Progress</p>
 
                     <p className="text-gray-300 leading-relaxed text-[16px]">

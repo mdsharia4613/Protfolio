@@ -33,8 +33,8 @@ const Navbr = () => {
                         <Link to='skills' smooth={true} duration={700} offset={-70} className="hover:text-sky-400 transition cursor-pointer underline-effect">Skills</Link>
                         <Link to='education' className="hover:text-sky-400 transition cursor-pointer underline-effect">Education</Link>
                         <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Experience</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Project</Link>
-                        <Link className="hover:text-sky-400 transition cursor-pointer underline-effect">Contact</Link>
+                        <Link to='project' className="hover:text-sky-400 transition cursor-pointer underline-effect">Project</Link>
+                        <Link to='contact' className="hover:text-sky-400 transition cursor-pointer underline-effect">Contact</Link>
                     </ul>
 
                     {/* Social Icons */}

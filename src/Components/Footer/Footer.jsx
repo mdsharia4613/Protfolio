@@ -29,7 +29,7 @@ const Footer = () => {
                 <nav>
                     <h6 className="footer-title bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Quick Links</h6>
                     <a className="link link-hover">Home</a>
-                    <a className="link link-hover">Skills</a>
+                    <a  className="link link-hover">Skills</a>
                     <a className="link link-hover">Experience</a>
                     <a className="link link-hover">Project</a>
                 </nav>

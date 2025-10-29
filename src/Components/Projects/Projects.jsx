@@ -17,7 +17,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="py-20 bg-black text-white">
+        <div id='project' className="py-20 bg-black text-white">
            <div className='container mx-auto'>
                 <h2 className="text-center text-4xl font-bold mb-12 text-rose-500 drop-shadow-[0_0_15px_rgba(255,0,0,0.7)]">
                     || My Projects ||

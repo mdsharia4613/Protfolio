@@ -65,7 +65,8 @@ const Banner = () => {
                         </motion.button>
 
                         <motion.a 
-                            href="#contact"
+                            
+                            href="#"
                             whileHover={{ scale: 1.08 }}
                             whileTap={{ scale: 0.95 }}
                             className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all"

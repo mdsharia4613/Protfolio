@@ -8,8 +8,8 @@ const Banner = () => {
     // CV download function
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "/cv.pdf";
-        link.download = "My_CV.pdf";
+        link.href = "/MyResume.pdf";
+        link.download = "/MyResume.pdf";
         link.click();
     };
    
@@ -116,7 +116,7 @@ const Banner = () => {
                                 whileTap={{ scale: 0.95 }}
                                 className="bg-linear-to-r f-rom-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all cursor-pointer"
                             >
-                                Download CV
+                                Download Resume
                             </motion.button>
 
                             <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.95 }}>

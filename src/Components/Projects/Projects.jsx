@@ -45,11 +45,11 @@ const Projects = () => {
                     }}
                     pagination={{ clickable: true }}
                     modules={[EffectCoverflow, Pagination]}
-                    className="mySwiper"
+                    className="mySwiper "
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative bg-gray-900 rounded-2xl border border-cyan-400/40 shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] transition-all duration-500 overflow-hidden w-[320px] h-[420px] mx-auto hover:scale-105 group">
+                            <div className="relative bg-gray-900 p- rounded-2xl border border-cyan-400/40 shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] transition-all duration-500 overflow-hidden w-[320px] h-[420px] mx-auto hover:scale-105 group">
                                 <img
                                     src={project.img}
                                     alt=""

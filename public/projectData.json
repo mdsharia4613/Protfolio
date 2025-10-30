@@ -10,7 +10,7 @@
         ],
         "description": "RedParts is a modern and fully responsive portfolio website designed to showcase personal skills, projects, and educational background with smooth animations and clean UI components.",
         "challengingPart": "The most challenging part was implementing smooth scroll animations and transitions using Framer Motion while maintaining performance and responsiveness across all devices.",
-        "live": "https://690341273a8d530adfb5e0fc--chipper-buttercream-4f000b.netlify.app/"
+        "live": "https://adorable-snickerdoodle-bbcf48.netlify.app/"
     },
     {
         "id": 2,
@@ -22,7 +22,7 @@
         ],
         "description": "EcoBazar is a clean and minimal e-commerce landing page showcasing featured products, deals, and categories with an eye-catching layout built using Tailwind CSS.",
         "challengingPart": "The main challenge was creating a flexible and fully responsive grid layout that looks balanced across different screen sizes.",
-        "live": "https://inspiring-semifreddo-495529.netlify.app/"
+        "live": "https://brilliant-brigadeiros-77d39e.netlify.app/"
     },
     {
         "id": 3,
@@ -35,7 +35,7 @@
         ],
         "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
         "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
-        "live": "https://graceful-cendol-8d9335.netlify.app/"
+        "live": "https://celadon-biscochitos-6e6a6e.netlify.app/"
     },
     {
         "id": 4,
@@ -47,7 +47,7 @@
         ],
         "description": "Medifit is a modern health and fitness website design featuring sections for training programs, expert doctors, and health consultation. It focuses on visual balance and user-friendly layouts.",
         "challengingPart": "Creating elegant hover animations and perfect section alignment purely with CSS (without JavaScript) was the most challenging part.",
-        "live": "https://darling-toffee-be8a16.netlify.app/"
+        "live": "https://friendly-tanuki-a7d4b4.netlify.app/"
     },
     {
         "id": 5,
@@ -60,6 +60,6 @@
         ],
         "description": "BookShelf is an interactive blogging platform where users can write, read, and delete posts. It includes markdown support and stores data using local storage.",
         "challengingPart": "The most challenging part was integrating the markdown parser and managing post data efficiently in local storage.",
-        "live": "https://velvety-semifreddo-d3422b.netlify.app/"
+        "live": "https://69039a30ba4bab1664d22776--startling-kataifi-7eea96.netlify.app/"
     }
 ]
